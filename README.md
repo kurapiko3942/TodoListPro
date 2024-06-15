@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TodoListPro
 
-## Getting Started
+このプロジェクトは、Next.jsとFastAPIを使用したTodoリストアプリケーションです。
 
-First, run the development server:
+## プロジェクトのセットアップ手順
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 必要なツール
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (推奨バージョン: 14.x 以上)
+- Python (推奨バージョン: 3.9 以上)
+- npm (Node.jsに含まれています)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### セットアップ手順
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. リポジトリをクローンする
 
-## Learn More
+    ```bash
+    git clone https://github.com/yourusername/TodoListPro.git
+    cd TodoListPro
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. ルートディレクトリのパッケージをインストール
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. フロントエンドとバックエンドのセットアップ
 
-## Deploy on Vercel
+    ```bash
+    # フロントエンドのセットアップ
+    cd frontend
+    npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    # バックエンドのセットアップ
+    cd ../backend
+    pip install -r requirements.txt
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. サーバーの起動
+
+    - フロントエンドサーバーを起動するには：
+
+        ```bash
+        cd frontend
+        npm run dev
+        ```
+
+    - バックエンドサーバーを起動するには：
+
+        ```bash
+        cd backend
+        uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+        ```
+
+5. プロジェクト全体の実行
+
+    プロジェクトのルートディレクトリに戻り、以下のコマンドを実行します:
+
+    ```bash
+    npm run dev
+    ```
