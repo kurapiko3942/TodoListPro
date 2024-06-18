@@ -1,16 +1,14 @@
 import Image from "next/image";
 import { Google as GoogleIcon, Facebook as FacebookIcon, Apple as AppleIcon } from '@mui/icons-material';
 
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h1 className="text-2xl font-bold mb-8 text-center">ログイン</h1>
         <div className="flex flex-col space-y-4">
-          <button className="bg-red-500 text-white py-2 px-4 rounded flex items-center justify-center">
-            <GoogleIcon/>
-            <div>Googleで続ける</div>
-          </button>
+         
           <button className="bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center">
             <FacebookIcon/>
             <div>Facebookで続ける</div>
